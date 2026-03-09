@@ -1,10 +1,8 @@
 baseURL = "https://mavizito23.github.io/Proyecto-Blog/"
+canonifyURLs = true
 languageCode = "en-us"
 title = "Mavi Blog"
 theme = "hugo-profile"
-
-relativeURLs = false
-canonifyURLs = false
 
 
 [params]
@@ -53,7 +51,7 @@ Paginate = 3
 [[params.projects.items]]
     title = "Estimando el valor de Pi con puntitos"
     content = "Una demostración de cómo obtener el valor de π utilizando simulaciones de azar (Monte Carlo) implementadas en Python."
-    image = "images/ValorPi-Portada.jpg"
+    image = "/images/ValorPi-Portada.jpg"
     [params.projects.items.featured]
         name = "Leer artículo"
         link = "/posts/valorpi/"
@@ -61,7 +59,7 @@ Paginate = 3
 [[params.projects.items]]
     title = "Probabilidad frecuentista y bayesiana"
     content = "Este problema muestra la gran salto que dio la probabilidad bayesiana frente al enfoque frecuentista."
-    image = "images/Billar-Portada.png"
+    image = "/images/Billar-Portada.png"
     [params.projects.items.featured]
         name = "Leer artículo"
         link = "/posts/problemadebillar/"
