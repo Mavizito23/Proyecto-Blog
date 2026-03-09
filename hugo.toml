@@ -1,4 +1,4 @@
-baseURL = "https://mavizito23.github.io/Mi-Blog/"
+baseURL = "https://mavizito23.github.io/Proyecto-Blog/"
 languageCode = "en-us"
 title = "Mavi Blog"
 theme = "hugo-profile"
