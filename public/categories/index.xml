@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Mavi Blog</title>
-    <link>http://localhost:1313/Mi-Blog/categories/</link>
+    <link>https://mavizito23.github.io/Proyecto-Blog/categories/</link>
     <description>Recent content in Categories on Mavi Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/Mi-Blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mavizito23.github.io/Proyecto-Blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Probabilidad</title>
-      <link>http://localhost:1313/Mi-Blog/categories/probabilidad/</link>
+      <link>https://mavizito23.github.io/Proyecto-Blog/categories/probabilidad/</link>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Mi-Blog/categories/probabilidad/</guid>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/categories/probabilidad/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/Mi-Blog/categories/python/</link>
+      <link>https://mavizito23.github.io/Proyecto-Blog/categories/python/</link>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Mi-Blog/categories/python/</guid>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/categories/python/</guid>
       <description></description>
     </item>
     <item>
       <title>Simulación</title>
-      <link>http://localhost:1313/Mi-Blog/categories/simulaci%C3%B3n/</link>
+      <link>https://mavizito23.github.io/Proyecto-Blog/categories/simulaci%C3%B3n/</link>
       <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Mi-Blog/categories/simulaci%C3%B3n/</guid>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/categories/simulaci%C3%B3n/</guid>
       <description></description>
     </item>
     <item>
       <title>Geometría</title>
-      <link>http://localhost:1313/Mi-Blog/categories/geometr%C3%ADa/</link>
+      <link>https://mavizito23.github.io/Proyecto-Blog/categories/geometr%C3%ADa/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Mi-Blog/categories/geometr%C3%ADa/</guid>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/categories/geometr%C3%ADa/</guid>
       <description></description>
     </item>
   </channel>

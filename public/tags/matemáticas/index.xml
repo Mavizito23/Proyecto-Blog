@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matemáticas on Mavi Blog</title>
-    <link>http://localhost:1313/Mi-Blog/tags/matem%C3%A1ticas/</link>
+    <link>https://mavizito23.github.io/Proyecto-Blog/tags/matem%C3%A1ticas/</link>
     <description>Recent content in Matemáticas on Mavi Blog</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 20 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/Mi-Blog/tags/matem%C3%A1ticas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://mavizito23.github.io/Proyecto-Blog/tags/matem%C3%A1ticas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Estimando el valor de Pi con puntitos</title>
-      <link>http://localhost:1313/Mi-Blog/posts/valorpi/</link>
+      <link>https://mavizito23.github.io/Proyecto-Blog/posts/valorpi/</link>
       <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/Mi-Blog/posts/valorpi/</guid>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/posts/valorpi/</guid>
       <description>&lt;h2 id=&#34;el-valor-de-pi&#34;&gt;El valor de PI&lt;/h2&gt;&#xA;&lt;p&gt;Todos sabemos que el valor de $\pi$ es aproximadamente $3.1415&amp;hellip;$ y tal vez la &amp;ldquo;demostración&amp;rdquo; nos la enseñaron en la secundaria o preparatoria. Pero ¿y si lo vemos de otra manera? A continuación veremos otra forma de obtener el valor de $\pi$ pero con una herramienta muy poderosa llamada &lt;strong&gt;Simulación de Montecarlo&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;h3 id=&#34;qué-es-la-simulación-de-montecarlo&#34;&gt;¿Qué es la Simulación de Montecarlo?&lt;/h3&gt;&#xA;&lt;p&gt;La simulación de Montecarlo es un tipo de algoritmo computacional que utiliza un muestreo aleatorio repetido para obtener la probabilidad de que ocurra una serie de resultados.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,49 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/Mi-Blog/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/tags/bayes/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/bayes/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/categories/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/categories/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/posts/problemadebillar/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/posts/problemadebillar/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/posts/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/posts/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/tags/montecarlo/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/montecarlo/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/categories/probabilidad/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/categories/probabilidad/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/tags/probabilidad/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/probabilidad/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/categories/python/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/categories/python/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/categories/simulaci%C3%B3n/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/categories/simulaci%C3%B3n/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/tags/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/tags/data-science/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/data-science/</loc>
     <lastmod>2026-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/posts/valorpi/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/posts/valorpi/</loc>
     <lastmod>2026-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/categories/geometr%C3%ADa/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/categories/geometr%C3%ADa/</loc>
     <lastmod>2026-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/Mi-Blog/tags/matem%C3%A1ticas/</loc>
+    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/matem%C3%A1ticas/</loc>
     <lastmod>2026-01-20T00:00:00+00:00</lastmod>
   </url>
 </urlset>
