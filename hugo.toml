@@ -50,7 +50,7 @@ Paginate = 3
 [[params.projects.items]]
     title = "Estimando el valor de Pi con puntitos"
     content = "Una demostración de cómo obtener el valor de π utilizando simulaciones de azar (Monte Carlo) implementadas en Python."
-    image = "images/ValorPi-Portada.jpg"
+    image = "images/ValorPi.jpg"
     [params.projects.items.featured]
         name = "Leer artículo"
         link = "posts/valorpi"
