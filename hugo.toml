@@ -1,4 +1,6 @@
 baseURL = "https://mavizito23.github.io/Proyecto-Blog/"
+relativeURLs = true
+canonifyURLs = true
 languageCode = "en-us"
 title = "Mavi Blog"
 theme = "hugo-profile"
