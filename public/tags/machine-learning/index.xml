@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Mavi Blog</title>
+    <link>http://localhost:1313/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Mavi Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Senior Data Scientist</title>
+      <link>http://localhost:1313/experience/mavitech/</link>
+      <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/experience/mavitech/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;Desarrollo modelos de AI&lt;/li&gt;&#xA;&lt;li&gt;Automatización de pipelines de datos&lt;/li&gt;&#xA;&lt;li&gt;Análisis avanzado&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

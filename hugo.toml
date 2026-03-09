@@ -1,0 +1,195 @@
+baseURL = "https://mavizito23.github.io/Mi-Blog/"
+languageCode = "en-us"
+title = "Mavi Blog"
+theme = "hugo-profile"
+
+[params]
+  math = true
+  navbarFixed = true 
+
+Paginate = 3
+
+############################
+# NAVBAR & NAVEGACIÓN RÁPIDA
+############################
+
+[params.navbar]
+    align = "ms-auto"
+    brandName = "Mavi Blog"
+    fixed = true
+    sticky = true 
+
+[params.navbar.menus]
+    disableAbout = false
+    disableExperience = false
+    disableEducation = false
+    disableProjects = false
+    disableContact = false
+
+############################
+# HERO
+############################
+
+[params.hero]
+    enable = true
+    intro = "Hola, soy"
+    title = "Mauricio León"
+    subtitle = "y soy un apasionado de las matematicas..."
+    content = "Bienvenido a mi sitio personal, donde subiré cosas que aprendí en la escuala, y cosas y que aprendo sobre el camino :)."
+    image = "images/profile.jpeg"
+
+############################
+# 1. PUBLICACIONES Y PROYECTOS (Primero)
+############################
+
+[params.projects]
+    enable = true
+    title = "Publicaciones y Proyectos"
+
+[[params.projects.items]]
+    title = "Estimando el valor de Pi con puntitos"
+    content = "Una demostración de cómo obtener el valor de π utilizando simulaciones de azar (Monte Carlo) implementadas en Python."
+    image = "/images/ValorPi-Portada.jpg"
+    [params.projects.items.featured]
+        name = "Leer artículo"
+        link = "/posts/valorpi/"
+
+[[params.projects.items]]
+    title = "Probabilidad frecuentista y bayesiana"
+    content = "Este problema muestra la gran salto que dio la probabilidad bayesiana frente al enfoque frecuentista."
+    image = "/images/Billar-Portada.png"
+    [params.projects.items.featured]
+        name = "Leer artículo"
+        link = "/posts/problemadebillar/"
+
+############################
+# 2. SOBRE MÍ
+############################
+
+[params.about]
+    enable = true
+    title = "Sobre mí"
+    content = """
+Soy **Ingeniero Matemático** apasionado por encontrar el orden dentro de sistemas complejos. Mi enfoque combina una base sólida en finanzas y análisis de datos con el poder de la programación para optimizar procesos y guiar la toma de decisiones estratégicas. Me motiva profundamente el aprendizaje continuo y la adaptabilidad ante nuevos retos tecnológicos, lo que me permite moverme con fluidez entre el modelado predictivo, la inteligencia de negocios y la analítica financiera.
+
+En el día a día, disfruto traduciendo problemas abstractos en soluciones prácticas, ya sea mediante simulaciones Monte Carlo, algoritmos de aprendizaje supervisado o la creación de dashboards de alto impacto. Más allá de las herramientas técnicas, mi objetivo es siempre contribuir con un pensamiento analítico crítico que transforme los datos en valor real.
+"""
+    [params.about.skills]
+        enable = true
+        items = [
+            "Python & R",
+            "SQL & NoSQL",
+            "Machine Learning",
+            "Monte Carlo Simulation",
+            "Power BI & Tableau",
+            "Financial Modeling"
+        ]
+
+############################
+# 3. EXPERIENCIA (Información Completa)
+############################
+
+[params.experience]
+    enable = true
+    title = "Última experiencia profesional"
+
+[[params.experience.items]]
+    company = "Publicis Groupe"
+    [[params.experience.items.jobs]]
+        name = "Ingeniero de Datos"
+        date = "Ene 2026 - Actualidad"
+        content = """
+        Realizo trabajos de automatización a petición de clientes internos y externos.
+        Creación de dashboards y aplicativos donde se procura la calidad de la información
+        para Analitica e inteligencia de negocios.
+        """
+
+[[params.experience.items]]
+    company = "Hir Casa"
+    [[params.experience.items.jobs]]
+        name = "Ingeniero de Datos"
+        date = "May 2025 - Ene 2026"
+        content = """
+        Lideré la optimización de procesos financieros y de negocio mediante el diseño y 
+        mantenimiento de bases de datos relacionales robustas. Implementé flujos de 
+        automatización utilizando Python y SQL que redujeron significativamente la carga 
+        manual y los tiempos de procesamiento operativo. Mi enfoque principal consistió 
+        en asegurar la integridad de la información a través de procesos rigurosos de 
+        limpieza y validación de datos para una toma de decisiones confiable.
+        """
+
+[[params.experience.items]]
+    company = "Mawdy"
+    [[params.experience.items.jobs]]
+        name = "Becario de Analista de Datos"
+        date = "Feb 2024 - Mar 2025"
+        content = """
+        Desarrollé y gestioné dashboards interactivos para el monitoreo estratégico 
+        de métricas de negocio, facilitando la visualización de datos clave. Ejecuté 
+        tareas críticas de transformación y validación de datos (ETL) y apliqué modelos 
+        de analítica predictiva para apoyar la planeación táctica de la empresa. 
+        Durante este periodo, logré optimizar los ciclos de reporte mediante la reducción 
+        de tareas manuales repetitivas.
+        """
+
+############################
+# 4. EDUCACIÓN (ESTRUCTURA FINAL CORREGIDA)
+############################
+
+[params.education]
+    enable = true
+    title = "Educación"
+
+[[params.education.items]]
+    title = "Especialidad en Estadística"
+    date = "Próximamente 2026"
+    # El contenido debe ir AQUÍ, antes de abrir el bloque de school
+    content = """
+    Enfoque en modelos avanzados de probabilidad y análisis de datos complejos.
+    """
+    [params.education.items.school]
+        name = "Universidad Nacional Autónoma de México (UNAM)"
+        url = "https://www.unam.mx"
+
+[[params.education.items]]
+    title = "Licenciatura en Ingeniería Matemática"
+    date = "2021 - 2025"
+    content = """
+    Formación especializada en:
+    - Optimización numérica y procesos estocásticos.
+    - Modelado matemático aplicado a la industria.
+    - Análisis de sistemas complejos.
+    """
+    [params.education.items.school]
+        name = "IPN – Escuela Superior de Física y Matemáticas (ESFM)"
+        url = "https://www.esfm.ipn.mx"
+
+[[params.education.items]]
+    title = "Carrera Técnica en Contabilidad"
+    date = "2016 - 2020"
+    content = "Bases contables y financieras que complementan el perfil analítico en negocios."
+    [params.education.items.school]
+        name = "IPN – Preparatoria “Luis Enrique Erro”"
+        url = "https://www.cecyt11.ipn.mx"
+
+############################
+# 5. CONTACTO
+############################
+
+[params.contact]
+    enable = true
+    title = "Get in Touch"
+    email = "mauricioleon.2305@gmail.com"
+
+############################
+# FOOTER
+############################
+
+[params.footer]
+    [params.footer.recentPosts]
+        enable = true
+        path = "posts"
+        count = 3
+    [params.footer.socialNetworks]
+        github = true
+        linkedin = true
