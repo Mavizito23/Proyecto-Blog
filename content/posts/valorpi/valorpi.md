@@ -6,7 +6,7 @@ categories: ["Geometría", "Python", "Simulación"]
 tags: ["Montecarlo", "Matemáticas", "Data Science"]
 math: true 
 draft: false
-image: "/images/ValorPi-Portada.jpg"
+image: "ValorPi-Portada.jpg"
 ---
 
 ## El valor de PI
