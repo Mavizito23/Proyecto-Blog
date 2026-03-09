@@ -53,7 +53,7 @@ Paginate = 3
     image = "posts/valorpi/ValorPi-Portada.jpg"
     [params.projects.items.featured]
         name = "Leer artículo"
-        link = "/posts/valorpi/"
+        link = "posts/valorpi/"
 
 [[params.projects.items]]
     title = "Probabilidad frecuentista y bayesiana"
@@ -61,7 +61,7 @@ Paginate = 3
     image = "posts/billar/Billar-Portada.png"
     [params.projects.items.featured]
         name = "Leer artículo"
-        link = "/posts/problemadebillar/"
+        link = "posts/problemadebillar/"
 
 ############################
 # 2. SOBRE MÍ
