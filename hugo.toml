@@ -194,3 +194,16 @@ En el día a día, disfruto traduciendo problemas abstractos en soluciones prác
     [params.footer.socialNetworks]
         github = true
         linkedin = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      unsafe = true 
