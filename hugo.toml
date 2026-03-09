@@ -3,8 +3,6 @@ baseURL = "https://mavizito23.github.io/Proyecto-Blog/"
 languageCode = "en-us"
 title = "Mavi Blog"
 theme = "hugo-profile"
-relativeURLs = true
-canonifyURLs = false
 
 [params]
   math = true
