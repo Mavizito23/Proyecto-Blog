@@ -3,7 +3,7 @@ title: "Dos chicas, un juego de billar y probabilidad"
 author: "Mauricio Leon"
 date: "2026-01-30"
 categories: [probabilidad, python, simulación]
-tags: [probabilidad, bayes, montecarlo] # <-- AGREGA ESTA LÍNEA
+tags: [probabilidad, bayes, montecarlo]
 math: true
 draft: false
 image: "/images/Billar-Portada.png"
