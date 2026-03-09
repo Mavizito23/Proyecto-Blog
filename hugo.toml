@@ -1,9 +1,11 @@
 baseURL = "https://mavizito23.github.io/Proyecto-Blog/"
-relativeURLs = true
-canonifyURLs = true
 languageCode = "en-us"
 title = "Mavi Blog"
 theme = "hugo-profile"
+
+relativeURLs = false
+canonifyURLs = false
+
 
 [params]
   math = true
@@ -54,7 +56,7 @@ Paginate = 3
     image = "/images/ValorPi-Portada.jpg"
     [params.projects.items.featured]
         name = "Leer artículo"
-        link = "/posts/valorpi/"
+        link = "/Proyecto-Blog/posts/valorpi/"
 
 [[params.projects.items]]
     title = "Probabilidad frecuentista y bayesiana"
@@ -62,7 +64,7 @@ Paginate = 3
     image = "/images/Billar-Portada.png"
     [params.projects.items.featured]
         name = "Leer artículo"
-        link = "/posts/problemadebillar/"
+        link = "/Proyecto-Blog/posts/problemadebillar/"
 
 ############################
 # 2. SOBRE MÍ
