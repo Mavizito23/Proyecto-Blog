@@ -1,4 +1,5 @@
-baseURL = "https://mavizito23.github.io/Proyecto-Blog/"
+#baseURL = "https://mavizito23.github.io/Proyecto-Blog/"
+baseURL = "http://localhost:1313/"
 
 languageCode = "en-us"
 title = "Mavi Blog"
@@ -7,6 +8,7 @@ theme = "hugo-profile"
 [params]
   math = true
   navbarFixed = true 
+  customCSS = ["css/custom.css"]
 
 Paginate = 3
 
@@ -36,7 +38,7 @@ Paginate = 3
     intro = "Hola, soy"
     title = "Mauricio León"
     subtitle = "y soy un apasionado de las matematicas..."
-    content = "Bienvenido a mi sitio personal, donde subiré cosas que aprendí en la escuala, y cosas y que aprendo sobre el camino :)."
+    content = "Bienvenido a mi sitio personal, donde subiré cosas que aprendí en la escuala, y cosas que iré aprendo sobre el camino :)"
     image = "images/profile.png"
 
 ############################
@@ -62,6 +64,15 @@ Paginate = 3
     [params.projects.items.featured]
         name = "Leer artículo"
         link = "posts/problemadebillar"
+
+[[params.projects.items]]
+    title = "Programación Lineal para optimizar la toma de decisiones"
+    content = "Las matematicas como herramienta para maximizar (o minimizar) cosas de la vida cotidiana."
+    image = "images/Billar-Portada.png"
+    [params.projects.items.featured]
+        name = "Leer artículo"
+        link = "posts/dilemacarpintero"
+
 
 ############################
 # 2. SOBRE MÍ

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programación Lineal on Mavi Blog</title>
+    <link>http://localhost:1313/tags/programaci%C3%B3n-lineal/</link>
+    <description>Recent content in Programación Lineal on Mavi Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/programaci%C3%B3n-lineal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programación Lineal para optimizar la toma de decisiones</title>
+      <link>http://localhost:1313/posts/dilemacarpintero/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/dilemacarpintero/</guid>
+      <description>&lt;audio controls style=&#34;width: 100%;&#34;&gt;&#xD;&#xA;    &lt;source src=&#34;http://localhost:1313/audio/pista.mp3&#34; type=&#34;audio/mpeg&#34;&gt;&#xD;&#xA;&lt;/audio&gt;&#xA;&lt;h2 id=&#34;el-dilema-del-carpintero&#34;&gt;El Dilema del Carpintero&lt;/h2&gt;&#xA;&lt;p&gt;En el mundo de los negocios y la tecnología, a menudo nos enfrentamos a una pregunta engañosamente simple: &lt;strong&gt;¿Cómo podemos hacer más con menos?&lt;/strong&gt; Ya sea que estés gestionando el presupuesto de una campaña de marketing, asignando horas de desarrollo en un sprint de software o, en este caso, dirigiendo un taller de mobiliario, los recursos siempre son finitos. El verdadero reto del liderazgo no es solo producir, sino &lt;strong&gt;optimizar&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

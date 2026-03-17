@@ -2,49 +2,73 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/eficiencia/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/gesti%C3%B3n-de-operaciones/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/matem%C3%A1ticas-aplicadas/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/modelado-de-negocios/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/optimizaci%C3%B3n/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/programaci%C3%B3n-lineal/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dilemacarpintero/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/toma-de-decisiones/</loc>
+    <lastmod>2026-02-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/bayes/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/bayes/</loc>
+    <loc>http://localhost:1313/posts/problemadebillar/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/categories/</loc>
+    <loc>http://localhost:1313/tags/montecarlo/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/posts/problemadebillar/</loc>
+    <loc>http://localhost:1313/categories/probabilidad/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/posts/</loc>
+    <loc>http://localhost:1313/tags/probabilidad/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/montecarlo/</loc>
+    <loc>http://localhost:1313/categories/python/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/categories/probabilidad/</loc>
+    <loc>http://localhost:1313/categories/simulaci%C3%B3n/</loc>
     <lastmod>2026-01-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/probabilidad/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/categories/python/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/categories/simulaci%C3%B3n/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/</loc>
-    <lastmod>2026-01-30T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/data-science/</loc>
+    <loc>http://localhost:1313/tags/data-science/</loc>
     <lastmod>2026-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/posts/valorpi/</loc>
+    <loc>http://localhost:1313/posts/valorpi/</loc>
     <lastmod>2026-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/categories/geometr%C3%ADa/</loc>
+    <loc>http://localhost:1313/categories/geometr%C3%ADa/</loc>
     <lastmod>2026-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://mavizito23.github.io/Proyecto-Blog/tags/matem%C3%A1ticas/</loc>
+    <loc>http://localhost:1313/tags/matem%C3%A1ticas/</loc>
     <lastmod>2026-01-20T00:00:00+00:00</lastmod>
   </url>
 </urlset>

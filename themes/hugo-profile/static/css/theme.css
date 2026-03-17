@@ -50,24 +50,3 @@ body:not(.dark) #sun {
     display: none;
 }
 
-/* Efecto de color en las esquinas para modo claro */
-body:not(.dark) {
-    background-image: 
-        radial-gradient(at 0% 0%, rgba(0, 102, 255, 0.08) 0px, transparent 40%), 
-        radial-gradient(at 100% 0%, rgba(255, 165, 0, 0.05) 0px, transparent 30%);
-    background-attachment: fixed;
-}
-
-/* Efecto de color en las esquinas para modo oscuro */
-body.dark {
-    background-image: 
-        radial-gradient(at 0% 0%, rgba(0, 102, 255, 0.15) 0px, transparent 40%), 
-        radial-gradient(at 100% 100%, rgba(255, 165, 0, 0.1) 0px, transparent 40%);
-    background-attachment: fixed;
-}
-
-/* Opcional: Si quieres que los símbolos "+" tengan un color específico en lugar de gris */
-body {
-    /* Esto le da un toque azulado muy tenue al patrón de fondo */
-    background-blend-mode: overlay;
-}
