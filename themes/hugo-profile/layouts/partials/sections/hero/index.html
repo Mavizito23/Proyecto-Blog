@@ -16,6 +16,12 @@
                 <p class="hero-content">
                     {{ $hero.content | markdownify }}
                 </p>
+                <div class="mt-3 mb-4" style="position: relative; z-index: 10;">
+                    <audio controls style="width: 100%; max-width: 300px; height: 35px;">
+                        <source src="{{ "audio/pista.mp3" | relURL }}" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
                 <div class="row">
                     <div class="col-auto h-100">
                         {{ if .Site.Params.hero.button.enable }}
@@ -60,5 +66,6 @@
         <span>&theta;</span> <span>&omega;</span> <span>&sigma;</span>
     </div>
     {{ end }}
+    
 </section>
 {{ end }}
