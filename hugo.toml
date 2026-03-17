@@ -1,5 +1,5 @@
-#baseURL = "https://mavizito23.github.io/Proyecto-Blog/"
-baseURL = "http://localhost:1313/"
+baseURL = "https://mavizito23.github.io/Proyecto-Blog/"
+#baseURL = "http://localhost:1313/"
 
 languageCode = "en-us"
 title = "Mavi Blog"
