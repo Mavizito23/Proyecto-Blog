@@ -37,7 +37,7 @@ Paginate = 3
     title = "Mauricio León"
     subtitle = "y soy un apasionado de las matematicas..."
     content = "Bienvenido a mi sitio personal, donde subiré cosas que aprendí en la escuala, y cosas y que aprendo sobre el camino :)."
-    image = "images/profile.jpeg"
+    image = "images/profile.png"
 
 ############################
 # 1. PUBLICACIONES Y PROYECTOS (Primero)
@@ -187,10 +187,6 @@ En el día a día, disfruto traduciendo problemas abstractos en soluciones prác
 ############################
 
 [params.footer]
-    [params.footer.recentPosts]
-        enable = true
-        path = "posts"
-        count = 3
     [params.footer.socialNetworks]
         github = true
         linkedin = true
