@@ -8,7 +8,7 @@ math: true
 draft: false
 image: "../../images/ValorPi.jpg"
 ---
-{{< reproductor src="/audio/pista.mp3" >}}
+{{< reproductor src="audio/pista.mp3" >}}
 ## El Dilema del Carpintero
 
 En el mundo de los negocios y la tecnología, a menudo nos enfrentamos a una pregunta engañosamente simple: **¿Cómo podemos hacer más con menos?** Ya sea que estés gestionando el presupuesto de una campaña de marketing, asignando horas de desarrollo en un sprint de software o, en este caso, dirigiendo un taller de mobiliario, los recursos siempre son finitos. El verdadero reto del liderazgo no es solo producir, sino **optimizar**.
