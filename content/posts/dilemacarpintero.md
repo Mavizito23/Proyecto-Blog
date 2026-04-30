@@ -6,7 +6,7 @@ categories: ["Optimización", "Toma de Decisiones", "Gestión de Operaciones"]
 tags: ["Programación Lineal", "Matemáticas Aplicadas", "Eficiencia", "Modelado de Negocios"]
 math: true 
 draft: false
-image: "../../images/ValorPi.jpg"
+image: "../../images/PortadaLineal.png"
 ---
 ## El Dilema del Carpintero
 

@@ -68,7 +68,7 @@ Paginate = 3
 [[params.projects.items]]
     title = "Programación Lineal para optimizar la toma de decisiones"
     content = "Las matematicas como herramienta para maximizar (o minimizar) cosas de la vida cotidiana."
-    image = "images/Billar-Portada.png"
+    image = "images/PortadaLineal.png"
     [params.projects.items.featured]
         name = "Leer artículo"
         link = "posts/dilemacarpintero"
