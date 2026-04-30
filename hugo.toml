@@ -38,7 +38,7 @@ Paginate = 3
     intro = "Hola, soy"
     title = "Mauricio León"
     subtitle = "y soy un apasionado de las matematicas..."
-    content = "Bienvenido a mi sitio personal, donde subiré cosas que aprendí en la escuala, y cosas que iré aprendo sobre el camino :)"
+    content = "Bienvenido a mi sitio personal, donde subiré cosas que aprendí en la escuela, y cosas que iré aprendo sobre el camino :)"
     image = "images/profile.png"
 
 ############################
@@ -60,7 +60,7 @@ Paginate = 3
 [[params.projects.items]]
     title = "Probabilidad frecuentista y bayesiana"
     content = "Este problema muestra la gran salto que dio la probabilidad bayesiana frente al enfoque frecuentista."
-    image = "images/Billar-Portada.png"
+    image = "images/PortadaBillar.png"
     [params.projects.items.featured]
         name = "Leer artículo"
         link = "posts/problemadebillar"
@@ -89,12 +89,15 @@ En el día a día, disfruto traduciendo problemas abstractos en soluciones prác
     [params.about.skills]
         enable = true
         items = [
-            "Python & R",
+            "Python",
+            "R",
             "SQL & NoSQL",
             "Machine Learning",
             "Monte Carlo Simulation",
             "Power BI & Tableau",
-            "Financial Modeling"
+            "Financial Modeling",
+            "Statistics",
+            "Time Series"
         ]
 
 ############################
@@ -164,6 +167,19 @@ En el día a día, disfruto traduciendo problemas abstractos en soluciones prác
         url = "https://www.unam.mx"
 
 [[params.education.items]]
+    title = "Especialidad en Finanzas"
+    date = "2023 - 2025"
+    # El contenido debe ir AQUÍ, antes de abrir el bloque de school
+    content = """
+    - Optimización de portafolios, modelado estocástico de activos y algoritmos de 
+    simulación para la gestión de riesgos financieros.
+    - Estimación del Value at Risk (VaR) y valorar derivados complejos.
+    """
+    [params.education.items.school]
+        name = "Universidad Nacional Autónoma de México (UNAM)"
+        url = "https://www.unam.mx"
+
+[[params.education.items]]
     title = "Licenciatura en Ingeniería Matemática"
     date = "2021 - 2025"
     content = """
@@ -182,7 +198,7 @@ En el día a día, disfruto traduciendo problemas abstractos en soluciones prác
     content = "Bases contables y financieras que complementan el perfil analítico en negocios."
     [params.education.items.school]
         name = "IPN – Preparatoria “Luis Enrique Erro”"
-        url = "https://www.cecyt11.ipn.mx"
+        url = "https://www.cecyt14.ipn.mx"
 
 ############################
 # 5. CONTACTO
