@@ -176,8 +176,8 @@ En el día a día, disfruto traduciendo problemas abstractos en soluciones prác
     - Estimación del Value at Risk (VaR) y valorar derivados complejos.
     """
     [params.education.items.school]
-        name = "Universidad Nacional Autónoma de México (UNAM)"
-        url = "https://www.unam.mx"
+        name = "IPN – Escuela Superior de Física y Matemáticas (ESFM)"
+        url = "https://www.esfm.ipn.mx"
 
 [[params.education.items]]
     title = "Licenciatura en Ingeniería Matemática"
