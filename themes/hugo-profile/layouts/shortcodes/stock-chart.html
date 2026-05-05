@@ -1,86 +1,95 @@
-<!-- Contenedor de la gráfica -->
-<div id="chart-container" style="width: 100%; height: 400px; background-color: #1a1a1a; border-radius: 8px; border: 1px solid #333; overflow: hidden;">
+<div id="chart-container" style="width: 100%; height: 400px; background-color: #1a1a1a; border-radius: 8px; border: 1px solid #58C4DD; overflow: hidden; position: relative;">
     <div id="aapl-chart" style="width: 100%; height: 100%;"></div>
+    <div id="loading-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #1a1a1a; display: flex; align-items: center; justify-content: center; color: #58C4DD; font-family: sans-serif; z-index: 10;">
+        Cargando datos de mercado...
+    </div>
 </div>
 
-<!-- Carga de la librería desde CDN -->
+<!-- Librería de TradingView (Lightweight Charts) -->
 <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
 
 <script>
-    const chartElement = document.getElementById('aapl-chart');
-    
-    // 1. Configuración de la Gráfica con tus colores Manim
-    const chart = LightweightCharts.createChart(chartElement, {
-        layout: {
-            backgroundColor: '#1a1a1a',
-            textColor: '#d1d4dc',
-        },
-        grid: {
-            vertLines: { color: '#2b2b2b' },
-            horzLines: { color: '#2b2b2b' },
-        },
-        crosshair: { mode: LightweightCharts.CrosshairMode.Normal },
-        timeScale: { timeVisible: true, secondsVisible: false },
-    });
+    document.addEventListener("DOMContentLoaded", function() {
+        const chartElement = document.getElementById('aapl-chart');
+        const overlay = document.getElementById('loading-overlay');
+        
+        // 1. Crear la Gráfica con tus colores de Manim
+        const chart = LightweightCharts.createChart(chartElement, {
+            layout: {
+                background: { color: '#1a1a1a' },
+                textColor: '#d1d4dc',
+            },
+            grid: {
+                vertLines: { color: '#2b2b2b' },
+                horzLines: { color: '#2b2b2b' },
+            },
+            width: chartElement.offsetWidth,
+            height: 400,
+            timeScale: {
+                timeVisible: true,
+                secondsVisible: false,
+            },
+        });
 
-    const candleSeries = chart.addCandlestickSeries({
-        upColor: '#50FA7B',    // Verde (éxito)
-        downColor: '#FF5555',  // Rojo (fracaso)
-        borderDownColor: '#FF5555',
-        borderUpColor: '#50FA7B',
-        wickDownColor: '#FF5555',
-        wickUpColor: '#50FA7B',
-    });
+        // 2. Nueva sintaxis: addSeries con tipo 'Candlestick'
+        const candleSeries = chart.addSeries(LightweightCharts.CandlestickSeries, {
+            upColor: '#58C4DD',    // Tu azul Manim para velas alcistas
+            downColor: '#FF5555',  // Rojo para bajistas
+            borderVisible: false,
+            wickUpColor: '#58C4DD',
+            wickDownColor: '#FF5555',
+        });
 
-    // 2. Función para obtener datos históricos (24h)
-    // Usaremos Alpha Vantage o una API similar (necesitarás tu API Key)
-    // Reemplaza la función fetchHistoricalData por esta versión de Binance (BTC o AAPL vía futuros)
-    async function fetchHistoricalData() {
-        const url = `https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1m&limit=100`;
+        // 3. Función para obtener datos (Usando Binance para evitar bloqueos de API Key)
+        async function fetchMarketData() {
+            // Usamos BTCUSDT para asegurar que siempre haya datos activos
+            const url = `https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1m&limit=100`;
 
-        try {
-            const response = await fetch(url);
-            const data = await response.json();
-            
-            const formattedData = data.map(d => ({
-                time: d[0] / 1000,
-                open: parseFloat(d[1]),
-                high: parseFloat(d[2]),
-                low: parseFloat(d[3]),
-                close: parseFloat(d[4]),
-            }));
-
-            candleSeries.setData(formattedData);
-        } catch (e) {
-            console.error("Error en Binance API:", e);
-        }
-    }
-
-    // 3. Simulación de Tiempo Real (Cada 1 minuto)
-    function startRealTime() {
-        setInterval(async () => {
-            const apiKey = "TU_API_KEY";
-            const url = `https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=AAPL&apikey=${apiKey}`;
-            
             try {
                 const response = await fetch(url);
                 const data = await response.json();
-                const quote = data["Global Quote"];
                 
-                const lastBar = {
-                    time: Math.floor(Date.now() / 1000),
-                    open: parseFloat(quote["02. open"]),
-                    high: parseFloat(quote["03. high"]),
-                    low: parseFloat(output["04. low"]),
-                    close: parseFloat(quote["05. price"]),
-                };
-                
-                candleSeries.update(lastBar);
-            } catch (e) {
-                console.log("Esperando actualización de minuto...");
-            }
-        }, 60000); // 60,000 ms = 1 minuto
-    }
+                const formattedData = data.map(d => ({
+                    time: d[0] / 1000,
+                    open: parseFloat(d[1]),
+                    high: parseFloat(d[2]),
+                    low: parseFloat(d[3]),
+                    close: parseFloat(d[4]),
+                }));
 
-    fetchHistoricalData().then(startRealTime);
+                candleSeries.setData(formattedData);
+                overlay.style.display = 'none'; // Quitar el texto de carga
+            } catch (e) {
+                console.error("Error cargando datos:", e);
+                overlay.innerText = "Error al conectar con el mercado.";
+            }
+        }
+
+        // 4. Simulación de Tiempo Real (Polling cada 30 segundos)
+        function startRealTime() {
+            setInterval(async () => {
+                const url = `https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT`;
+                try {
+                    const response = await fetch(url);
+                    const data = await response.json();
+                    const price = parseFloat(data.price);
+                    
+                    // Actualizar la última vela
+                    candleSeries.update({
+                        time: Math.floor(Date.now() / 1000),
+                        value: price // La librería maneja el cierre automáticamente si es update
+                    });
+                } catch (e) { console.log("Reintentando conexión..."); }
+            }, 30000);
+        }
+
+        // Ejecutar
+        fetchMarketData();
+        startRealTime();
+
+        // Ajustar tamaño si la ventana cambia
+        window.addEventListener('resize', () => {
+            chart.applyOptions({ width: chartElement.offsetWidth });
+        });
+    });
 </script>
