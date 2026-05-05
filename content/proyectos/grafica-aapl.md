@@ -5,7 +5,7 @@ description: "Interfaz técnica para el seguimiento de mercado en tiempo real y 
 tags: ["Finanzas", "APIs", "JavaScript", "Trading"]
 math: true
 draft: false
-image: "images/PortadaProyecto.png"
+image: "/images/PortadaProyecto.png"
 ---
 
 ## Arquitectura de Monitoreo y Ejecución
