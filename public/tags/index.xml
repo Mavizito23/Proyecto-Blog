@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mavi Blog</title>
+    <link>https://mavizito23.github.io/Proyecto-Blog/tags/</link>
+    <description>Recent content in Tags on Mavi Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://mavizito23.github.io/Proyecto-Blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finanzas</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/finanzas/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/finanzas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/python/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Trading</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/trading/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/trading/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eficiencia</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/eficiencia/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/eficiencia/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Matemáticas Aplicadas</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/matem%C3%A1ticas-aplicadas/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/matem%C3%A1ticas-aplicadas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Modelado De Negocios</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/modelado-de-negocios/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/modelado-de-negocios/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programación Lineal</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/programaci%C3%B3n-lineal/</link>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/programaci%C3%B3n-lineal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bayes</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/bayes/</link>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/bayes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Montecarlo</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/montecarlo/</link>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/montecarlo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Probabilidad</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/probabilidad/</link>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/probabilidad/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Science</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/data-science/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/data-science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Matemáticas</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/matem%C3%A1ticas/</link>
+      <pubDate>Tue, 20 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/matem%C3%A1ticas/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

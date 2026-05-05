@@ -191,14 +191,6 @@ En el día a día, disfruto traduciendo problemas abstractos en soluciones prác
         name = "IPN – Preparatoria “Luis Enrique Erro”"
         url = "https://www.cecyt14.ipn.mx"
 
-############################
-# 5. CONTACTO
-############################
-
-[params.contact]
-    enable = true
-    title = "Get in Touch"
-    email = "mauricioleon.2305@gmail.com"
 
 ############################
 # FOOTER
