@@ -62,7 +62,8 @@ Paginate = 3
 [params.recentPosts]
     enable = true
     title = "Publicaciones Recientes"
-    count = 3 
+    section = "posts"
+    count = 3
 
 
 ############################
