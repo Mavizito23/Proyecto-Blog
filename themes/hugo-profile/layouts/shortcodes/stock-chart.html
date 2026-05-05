@@ -34,31 +34,25 @@
 
     // 2. Función para obtener datos históricos (24h)
     // Usaremos Alpha Vantage o una API similar (necesitarás tu API Key)
+    // Reemplaza la función fetchHistoricalData por esta versión de Binance (BTC o AAPL vía futuros)
     async function fetchHistoricalData() {
-        const symbol = "AAPL";
-        const apiKey = "TU_API_KEY"; // Consigue una gratis en Alpha Vantage
-        const url = `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbol}&interval=1min&apikey=${apiKey}`;
+        const url = `https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1m&limit=100`;
 
         try {
             const response = await fetch(url);
             const data = await response.json();
-            const timeSeries = data["Time Series (1min)"];
             
-            // Transformar datos al formato de la librería
-            const formattedData = Object.keys(timeSeries).map(time => {
-                const d = timeSeries[time];
-                return {
-                    time: new Date(time).getTime() / 1000,
-                    open: parseFloat(d["1. open"]),
-                    high: parseFloat(d["2. high"]),
-                    low: parseFloat(d["3. low"]),
-                    close: parseFloat(d["4. close"]),
-                };
-            }).reverse();
+            const formattedData = data.map(d => ({
+                time: d[0] / 1000,
+                open: parseFloat(d[1]),
+                high: parseFloat(d[2]),
+                low: parseFloat(d[3]),
+                close: parseFloat(d[4]),
+            }));
 
             candleSeries.setData(formattedData);
         } catch (e) {
-            console.error("Error cargando históricos:", e);
+            console.error("Error en Binance API:", e);
         }
     }
 
