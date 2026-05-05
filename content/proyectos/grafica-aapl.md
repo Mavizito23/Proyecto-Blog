@@ -3,6 +3,8 @@ title: "Terminal de Monitoreo y Simulación de Activos: BTC/USDT"
 date: 2026-05-04
 description: "Interfaz técnica para el seguimiento de mercado en tiempo real y ejecución de operaciones simuladas con gestión de fricción financiera."
 tags: ["Finanzas", "APIs", "JavaScript", "Trading"]
+math: true
+draft: false
 image: "images/PortadaProyecto.png"
 ---
 
