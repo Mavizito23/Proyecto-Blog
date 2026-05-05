@@ -10,6 +10,16 @@ theme = "hugo-profile"
   navbarFixed = true 
   customCSS = ["css/custom.css"]
 
+[[menu.main]]
+    name = "Blog"
+    url = "/posts/"
+    weight = 1
+
+[[menu.main]]
+    name = "Proyectos"
+    url = "/proyectos/"
+    weight = 2
+
 Paginate = 3
 
 ############################
@@ -49,29 +59,10 @@ Paginate = 3
     enable = true
     title = "Publicaciones y Proyectos"
 
-[[params.projects.items]]
-    title = "Estimando el valor de Pi con puntitos"
-    content = "Una demostración de cómo obtener el valor de π utilizando simulaciones de azar (Monte Carlo) implementadas en Python."
-    image = "images/ValorPi.png"
-    [params.projects.items.featured]
-        name = "Leer artículo"
-        link = "posts/valorpi"
-
-[[params.projects.items]]
-    title = "Probabilidad frecuentista y bayesiana"
-    content = "Este problema muestra la gran salto que dio la probabilidad bayesiana frente al enfoque frecuentista."
-    image = "images/PortadaBillar.png"
-    [params.projects.items.featured]
-        name = "Leer artículo"
-        link = "posts/problemadebillar"
-
-[[params.projects.items]]
-    title = "Programación Lineal para optimizar la toma de decisiones"
-    content = "Las matematicas como herramienta para maximizar (o minimizar) cosas de la vida cotidiana."
-    image = "images/PortadaLineal.png"
-    [params.projects.items.featured]
-        name = "Leer artículo"
-        link = "posts/dilemacarpintero"
+[params.recentPosts]
+    enable = true
+    title = "Publicaciones Recientes"
+    count = 3 
 
 
 ############################
