@@ -51,17 +51,6 @@ Paginate = 3
     content = "Bienvenido a mi sitio personal, donde subiré cosas que aprendí en la escuela, y cosas que iré aprendo sobre el camino :)"
     image = "images/profile.png"
 
-############################
-# 1. PUBLICACIONES Y PROYECTOS (Primero)
-############################
-
-
-[params.projects]
-    enable = true
-    title = "Publicaciones Recientes"
-    section = "posts"
-    count = 3
-
 
 ############################
 # 2. SOBRE MÍ
