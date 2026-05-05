@@ -149,11 +149,11 @@ En el día a día, disfruto traduciendo problemas abstractos en soluciones prác
 [[params.education.items]]
     title = "Especialidad en Finanzas"
     date = "2023 - 2025"
-    # El contenido debe ir AQUÍ, antes de abrir el bloque de school
     content = """
-    - Optimización de portafolios, modelado estocástico de activos y algoritmos de 
-    simulación para la gestión de riesgos financieros.
-    - Estimación del Value at Risk (VaR) y valorar derivados complejos.
+    Dominio de la Optimización de Portafolios y el Modelado Estocástico de activos financieros. 
+    Estos conocimientos los traduzco en algoritmos de simulación que permiten estimar el Value at 
+    Risk (VaR). Es la base que me permite diseñar herramientas dinámicas como mi simulador de mercado 
+    en tiempo real, conectando la teoría de riesgos con la ejecución de código funcional.
     """
     [params.education.items.school]
         name = "IPN – Escuela Superior de Física y Matemáticas (ESFM)"
@@ -163,10 +163,10 @@ En el día a día, disfruto traduciendo problemas abstractos en soluciones prác
     title = "Licenciatura en Ingeniería Matemática"
     date = "2021 - 2025"
     content = """
-    Formación especializada en:
-    - Optimización numérica y procesos estocásticos.
-    - Modelado matemático aplicado a la industria.
-    - Análisis de sistemas complejos.
+    Formación integral en la creación de Modelos Matemáticos para la industria y el análisis de 
+    sistemas complejos. La rigurosidad en Optimización Numérica y Procesos Estocásticos que 
+    obtuve durante la carrera, es lo que hoy me permite automatizar procesos de flujo de datos 
+    complejos, transformando problemas abstractos en soluciones de ingeniería eficientes y escalables.
     """
     [params.education.items.school]
         name = "IPN – Escuela Superior de Física y Matemáticas (ESFM)"
@@ -175,7 +175,13 @@ En el día a día, disfruto traduciendo problemas abstractos en soluciones prác
 [[params.education.items]]
     title = "Carrera Técnica en Contabilidad"
     date = "2016 - 2020"
-    content = "Bases contables y financieras que complementan el perfil analítico en negocios."
+    content = 
+    """
+    Bases contables y financieras que proporcionan la estructura necesaria para entender el lenguaje 
+    de los negocios. Este conocimiento me permite hoy realizar análisis de datos financieros con 
+    una comprensión profunda del origen de la información, facilitando la creación de herramientas 
+    de auditoría y reportes de alta precisión que cumplen con los estándares operativos reales.
+    """
     [params.education.items.school]
         name = "IPN – Preparatoria “Luis Enrique Erro”"
         url = "https://www.cecyt14.ipn.mx"
