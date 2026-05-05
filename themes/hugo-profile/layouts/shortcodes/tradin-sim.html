@@ -1,0 +1,117 @@
+<div style="background-color: #1a1a1a; color: white; padding: 20px; border-radius: 10px; border: 1px solid #58C4DD; font-family: 'Courier New', Courier, monospace;">
+    <h3 style="color: #58C4DD; text-align: center;">Simulador de Portafolio Quant</h3>
+    
+    <!-- Resumen de Cuenta -->
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 20px; background: #252525; padding: 15px; border-radius: 5px;">
+        <div>Efectivo: <span id="balance-mxn" style="color: #50FA7B;">$25,000.00</span></div>
+        <div>Invertido: <span id="invested-mxn" style="color: #58C4DD;">$0.00</span></div>
+        <div>Comisiones: <span id="fees-mxn" style="color: #FF5555;">$0.00</span></div>
+        <div>P&L Total: <span id="total-pnl" style="font-weight: bold;">$0.00</span></div>
+    </div>
+
+    <!-- Panel de Control -->
+    <div style="display: flex; gap: 10px; margin-bottom: 20px; align-items: center;">
+        <select id="crypto-select" style="background: #333; color: white; border: 1px solid #58C4DD; padding: 5px;">
+            <option value="BTCUSDT">BTC/USDT</option>
+            <option value="ETHUSDT">ETH/USDT</option>
+            <option value="BNBUSDT">BNB/USDT</option>
+            <option value="SOLUSDT">SOL/USDT</option>
+            <option value="ADAUSDT">ADA/USDT</option>
+        </select>
+        <input type="number" id="trade-amount" placeholder="Monto MXN" style="width: 100px; background: #333; border: 1px solid #58C4DD; color: white; padding: 5px;">
+        <button onclick="executeTrade('BUY')" style="background: #50FA7B; color: black; border: none; padding: 5px 15px; cursor: pointer; font-weight: bold;">BUY</button>
+        <button onclick="executeTrade('SELL')" style="background: #FF5555; color: white; border: none; padding: 5px 15px; cursor: pointer; font-weight: bold;">SELL</button>
+    </div>
+
+    <!-- Historial de Operaciones -->
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
+        <thead>
+            <tr style="border-bottom: 1px solid #58C4DD; color: #58C4DD;">
+                <th style="text-align: left;">Tipo</th>
+                <th style="text-align: left;">Activo</th>
+                <th style="text-align: right;">Precio</th>
+                <th style="text-align: right;">MXN</th>
+                <th style="text-align: right;">Fee</th>
+            </tr>
+        </thead>
+        <tbody id="trade-history">
+            <!-- Las filas se generan dinámicamente -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // Parámetros de la simulación
+    let account = {
+        cash: 25000,
+        portfolio: {}, // { "BTCUSDT": 0.001 }
+        totalFees: 0,
+        history: []
+    };
+
+    const FEE_RATE = 0.001; // 0.1% de comisión (estándar de Binance)
+    const USD_MXN = 17.50; // Tipo de cambio fijo para la simulación
+
+    async function getPrice(symbol) {
+        const response = await fetch(`https://api.binance.com/api/v3/ticker/price?symbol=${symbol}`);
+        const data = await response.json();
+        return parseFloat(data.price) * USD_MXN;
+    }
+
+    async function executeTrade(type) {
+        const symbol = document.getElementById('crypto-select').value;
+        const amountMXN = parseFloat(document.getElementById('trade-amount').value);
+        const priceMXN = await getPrice(symbol);
+        
+        if (isNaN(amountMXN) || amountMXN <= 0) return alert("Ingresa un monto válido");
+
+        const fee = amountMXN * FEE_RATE;
+        
+        if (type === 'BUY') {
+            if (amountMXN + fee > account.cash) return alert("Saldo insuficiente");
+            
+            account.cash -= (amountMXN + fee);
+            account.totalFees += fee;
+            account.portfolio[symbol] = (account.portfolio[symbol] || 0) + (amountMXN / priceMXN);
+        } else {
+            const assetQty = account.portfolio[symbol] || 0;
+            const sellAmount = assetQty * priceMXN;
+            if (assetQty <= 0) return alert("No tienes este activo");
+            
+            // Vendemos todo el activo para este ejemplo
+            const currentSellValue = assetQty * priceMXN;
+            const sellFee = currentSellValue * FEE_RATE;
+            
+            account.cash += (currentSellValue - sellFee);
+            account.totalFees += sellFee;
+            delete account.portfolio[symbol];
+        }
+
+        updateUI(type, symbol, priceMXN, amountMXN, fee);
+    }
+
+    function updateUI(type, symbol, price, mxn, fee) {
+        // Actualizar Tabla
+        const row = `<tr>
+            <td style="color: ${type === 'BUY' ? '#50FA7B' : '#FF5555'}">${type}</td>
+            <td>${symbol}</td>
+            <td style="text-align: right;">$${price.toLocaleString()}</td>
+            <td style="text-align: right;">$${mxn.toLocaleString()}</td>
+            <td style="text-align: right;">$${fee.toFixed(2)}</td>
+        </tr>`;
+        document.getElementById('trade-history').insertAdjacentHTML('afterbegin', row);
+
+        // Actualizar Balance
+        document.getElementById('balance-mxn').innerText = `$${account.cash.toLocaleString()}`;
+        document.getElementById('fees-mxn').innerText = `$${account.totalFees.toLocaleString()}`;
+        
+        // Cálculo rápido de invertido
+        let invested = 0;
+        for (let key in account.portfolio) {
+            // Nota: En un sistema real, aquí haríamos fetch de todos los precios actuales
+            // Para el resumen, usamos el último precio de ejecución
+            invested += account.portfolio[key] * price;
+        }
+        document.getElementById('invested-mxn').innerText = `$${invested.toLocaleString()}`;
+    }
+</script>
