@@ -1,41 +1,41 @@
 ---
-title: "Terminal Quant: Visualización y Simulación de Activos"
+title: "Terminal de Monitoreo y Simulación de Activos: BTC/USDT"
 date: 2026-05-04
-description: "Desarrollo de una interfaz dinámica para el monitoreo de mercados y ejecución de estrategias con gestión de capital."
-tags: ["Finanzas", "Python", "JavaScript", "Trading Quant"]
+description: "Interfaz técnica para el seguimiento de mercado en tiempo real y ejecución de operaciones simuladas con gestión de fricción financiera."
+tags: ["Finanzas", "APIs", "JavaScript", "Trading"]
 #image: "images/PortadaLineal.png"
 ---
 
-## Análisis de Microestructura y Volatilidad
+## Arquitectura de Monitoreo y Ejecución
 
-Este proyecto integra herramientas de ingeniería de software con modelado financiero para analizar la microestructura del mercado en tiempo real. Como **Ingeniero Matemático**, mi objetivo es observar cómo las fluctuaciones de corto plazo se alinean con los modelos estocásticos y procesos de difusión aprendidos en la **ESFM**.
+Esta terminal ha sido diseñada como un entorno integrado para el análisis de microestructura de mercado y la validación de estrategias de inversión. El sistema opera mediante la sincronización de flujos de datos en tiempo real y un motor de cálculo que procesa la gestión de capital bajo condiciones operativas reales.
 
-La terminal se divide en dos módulos críticos: monitoreo visual y gestión de capital.
-
-### 1. Monitoreo de Mercado en Tiempo Real
-A continuación, se presenta un panel dinámico que consume datos directamente de la API de Binance. Utilizo la librería **Lightweight Charts** para renderizar velas japonesas con alta eficiencia, permitiendo identificar patrones de volatilidad sin latencia significativa.
+### 1. Visualización de Datos de Mercado
+El módulo de visualización emplea la librería **Lightweight Charts** para el renderizado de velas japonesas de alta resolución. La integración se realiza mediante el consumo asíncrono de *endpoints* de mercado, permitiendo una observación precisa de la acción del precio y la volatilidad intradía.
 
 {{< stock-chart >}}
 
-> **Nota técnica:** La gráfica está configurada con una paleta de colores personalizada (basada en mis visualizaciones de *Manim*) para mantener una identidad visual técnica y profesional.
+*   **Frecuencia:** Actualización de datos cada 20 segundos.
+*   **Fuente:** Conexión directa con API de mercado para precios *spot*.
+*   **Interactividad:** Capacidad de ajuste de escala temporal y seguimiento de precio actual.
 
 ---
 
-### 2. Simulador de Gestión de Portafolio
-Más allá de la visualización, la toma de decisiones financieras requiere un control estricto del capital. He implementado un motor de simulación con un balance inicial de **$25,000 MXN**. 
-
-Este módulo permite ejecutar operaciones de compra/venta sobre un universo de 5 activos distintos, considerando:
-* **Costos de Transacción:** Aplicación de comisiones reales (0.1%) para medir el impacto del *fee* en el rendimiento total.
-* **Balance Dinámico:** Seguimiento de capital invertido vs. efectivo disponible.
-* **Control de P&L:** Registro histórico de operaciones para análisis post-trade.
+### 2. Motor de Simulación de Cartera
+El simulador de gestión de capital permite ejecutar operaciones de compra y venta sobre un balance inicial de **$25,000 MXN**. Su propósito fundamental es medir el impacto del rendimiento neto frente a los costos operativos.
 
 {{< trading-sim >}}
 
+#### Funcionamiento del Motor:
+*   **Gestión de Fricción:** El sistema aplica automáticamente una tasa de comisión del **0.1%** por cada transacción. Esto permite observar cómo los costos de operación afectan el punto de equilibrio (*breakeven*) y el retorno final.
+*   **Cálculo de P&L Realizado:** El indicador de Ganancias y Pérdidas (P&L) se actualiza de forma dinámica comparando el valor total de la cuenta (Efectivo + Valor de Mercado de los Activos) contra el capital inicial.
+*   **Control de Liquidez:** El algoritmo de ejecución valida la disponibilidad de fondos y activos antes de procesar cada orden, emulando las restricciones de un entorno de corretaje profesional.
+
 ---
 
-### Arquitectura del Sistema
-*   **Data Pipeline:** Consumo asíncrono de APIs REST para precios *spot*.
-*   **Front-end:** Renderizado del lado del cliente para asegurar una respuesta inmediata de la interfaz.
-*   **Lógica de Inversión:** Algoritmo de gestión que valida la liquidez del portafolio antes de cada ejecución, emulando un sistema de gestión de riesgos profesional.
+### Especificaciones Técnicas
+*   **Data Pipeline:** Implementación de peticiones `fetch` asíncronas para garantizar que la interfaz no sufra bloqueos durante la actualización de precios.
+*   **Cómputo en Cliente:** Toda la lógica de cálculo de portafolio y renderizado se realiza en el navegador, asegurando una respuesta inmediata a las acciones del usuario.
+*   **Estructura de Datos:** Los registros de transacciones se almacenan en un historial dinámico que permite auditar el precio de ejecución, el monto operado y la comisión pagada en cada evento.
 
-Este proyecto demuestra mi capacidad para transformar datos abstractos en herramientas de decisión estratégica, combinando la precisión matemática con el desarrollo de aplicativos de alto impacto.
+La intención principal de este desarrollo es proporcionar una herramienta educativa que permita comprender la relación entre la volatilidad del mercado, el tamaño de posición y el impacto de los costos transaccionales en la rentabilidad a largo plazo.
