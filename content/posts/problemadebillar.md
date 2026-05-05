@@ -6,7 +6,7 @@ categories: [probabilidad, python, simulación]
 tags: [probabilidad, bayes, montecarlo]
 math: true
 draft: false
-image: "images/PortadaBillar.png"
+image: "/images/PortadaBillar.png"
 ---
 
 En muchos juegos por puntos, como el billar o el tenis de mesa, surge una pregunta natural: dado el marcador actual, ¿qué probabilidad tiene cada jugador de ganar? 

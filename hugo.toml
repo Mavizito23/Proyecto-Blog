@@ -1,5 +1,7 @@
 baseURL = "https://mavizito23.github.io/Proyecto-Blog/"
 #baseURL = "http://localhost:1313/"
+canonifyURLs = true  
+relativeURLs = false 
 
 languageCode = "en-us"
 title = "Mavi Blog"
