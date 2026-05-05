@@ -55,11 +55,8 @@ Paginate = 3
 # 1. PUBLICACIONES Y PROYECTOS (Primero)
 ############################
 
-[params.projects]
-    enable = true
-    title = "Publicaciones y Proyectos"
 
-[params.recentPosts]
+[params.projects]
     enable = true
     title = "Publicaciones Recientes"
     section = "posts"
