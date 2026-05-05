@@ -9,6 +9,13 @@
     <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://mavizito23.github.io/Proyecto-Blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>APIs</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/apis/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/apis/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Finanzas</title>
       <link>https://mavizito23.github.io/Proyecto-Blog/tags/finanzas/</link>
       <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
@@ -16,10 +23,10 @@
       <description></description>
     </item>
     <item>
-      <title>Python</title>
-      <link>https://mavizito23.github.io/Proyecto-Blog/tags/python/</link>
+      <title>JavaScript</title>
+      <link>https://mavizito23.github.io/Proyecto-Blog/tags/javascript/</link>
       <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
-      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/python/</guid>
+      <guid>https://mavizito23.github.io/Proyecto-Blog/tags/javascript/</guid>
       <description></description>
     </item>
     <item>
