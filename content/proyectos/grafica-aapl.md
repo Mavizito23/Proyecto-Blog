@@ -2,6 +2,7 @@
 title: "Monitoreo de AAPL en Tiempo Real"
 date: 2026-05-04
 description: "Visualización de datos financieros usando APIs y Lightweight Charts."
+tags: ["Finanzas", "Python", "Trading"]
 #image: "images/portada-aapl.png"
 ---
 
